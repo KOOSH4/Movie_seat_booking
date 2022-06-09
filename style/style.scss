@@ -13,6 +13,10 @@
     --occupied: #747179;
     --text: #f4FFDC;
     --text-info: #E1F780;
+    --midsommer: #4aa4af;
+    --visit: #4c4544;
+    --joker: #2d1f1e;
+    --lobster: #8b8877;
 }
 body{
     background-color: var(--dark-backgroung);
@@ -30,7 +34,7 @@ body{
 .movie-container{
     margin: 2rem;
     select{
-        background-color: var(--text);
+        background-color: var(--light-foreground);
         border:0;
         border-radius: 5px;
         font-size: 1rem;
@@ -97,12 +101,15 @@ body{
     flex-direction: row;
 }
 .screen{
+    background-image: url(../img/Midsommer.jpg);
+    box-shadow: 0 3px 20px var(--midsommer);
     background-color: rgb(202, 202, 202);
     height:150px;
     width:200px;
     margin-bottom: 2rem;
     transform: rotateX(-45deg);
     box-shadow: 0 3px 20px rgba(255, 255, 255, 0.587);
+    background-size: cover;
 }
 .seat:not(.occupied):hover{
     cursor: pointer;
@@ -118,4 +125,24 @@ body{
         color: var(--text-info);
         font-weight: bold;
     }
+}
+.lobster{
+    background-image: url(../img/lobster.jpg);
+    box-shadow: 0 3px 20px var(--lobster);
+    
+}
+.midsommer{
+    background-image: url(../img/Midsommer.jpg);
+    
+    box-shadow: 0 3px 20px var(--midsommer);
+}
+.visit{
+    background-image: url(../img/Visit.jpg);
+    box-shadow: 0 3px 20px var(--visit);
+    
+}
+.joker{
+    background-image: url(../img/joker.jpg);
+    box-shadow: 0 3px 20px var(--joker);
+    
 }
